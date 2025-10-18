@@ -11,24 +11,6 @@
   <link rel="shortcut icon" type="image/webp" href="https://i.postimg.cc/htF3JFMC/3-adesivo-playboy-adesivo-coelho-da-playboy-para-carro-moto.webp">
   <link rel="apple-touch-icon" href="https://i.postimg.cc/htF3JFMC/3-adesivo-playboy-adesivo-coelho-da-playboy-para-carro-moto.webp">
 
-  <!-- ✅ Pixel UTMify atualizado -->
-  <script>
-    window.pixelId = "68f2c8dafb60f08d7093fa56";
-    var a = document.createElement("script");
-    a.setAttribute("async", "");
-    a.setAttribute("defer", "");
-    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-    document.head.appendChild(a);
-  </script>
-
-  <script
-    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-    data-utmify-prevent-xcod-sck
-    data-utmify-prevent-subids
-    async
-    defer
-  ></script>
-
   <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -110,6 +92,7 @@
       <p id="visualizando" class="mt-4 text-sm text-white/60"></p>
     </div>
   </section>
+
   <!-- Galeria -->
   <section class="border-t border-white/10">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
@@ -130,7 +113,6 @@
       <p class="mt-8 text-center text-white/60 text-sm">Imagens meramente ilustrativas. Acesso completo após liberação do pacote.</p>
     </div>
   </section>
-
   <!-- Prova Social -->
   <section class="border-t border-white/10">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
@@ -189,20 +171,12 @@
   <!-- Pacotes -->
   <section id="pacotes" class="border-t border-white/10">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
-
       <div class="text-center mb-6">
         <p id="contador-topo" class="text-brand-red font-bold text-sm sm:text-base">
           ⚡ Oferta expira em <span id="tempo-restante">05:00</span>
         </p>
       </div>
-
-      <div class="reveal text-center mb-10">
-        <h2 class="text-2xl sm:text-4xl font-extrabold">Escolha seu pacote</h2>
-        <p class="mt-3 text-white/60">Acesso imediato, download seguro e atualizações vitalícias.</p>
-      </div>
-
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Pacote Sedução -->
         <div class="reveal rounded-xl border border-white/10 bg-white/5 p-6 hover:bg-white/[.07] transition">
           <div class="flex items-baseline justify-between">
             <h3 class="text-xl font-bold">Pacote Sedução</h3>
@@ -217,13 +191,11 @@
             <li>◆ Acesso imediato após pagamento</li>
             <li>◆ 7 dias de garantia total</li>
           </ul>
-          <button
-            onclick="window.location.href='https://pay.cakto.com.br/pcytvby_607625';"
-            class="mt-6 inline-flex w-full items-center justify-center rounded-md bg-brand-red hover:bg-brand-redDark px-6 py-3 font-bold uppercase tracking-wide shadow-glow transition btn-pulse">
+          <button onclick="window.location.href='https://pay.cakto.com.br/pcytvby_607625';" class="mt-6 inline-flex w-full items-center justify-center rounded-md bg-brand-red hover:bg-brand-redDark px-6 py-3 font-bold uppercase tracking-wide shadow-glow transition btn-pulse">
             💋 Quero o Pacote Sedução
           </button>
         </div>
-        <!-- Pacote Premium -->
+
         <div class="reveal relative rounded-xl border border-white/10 bg-gradient-to-b from-white/[.07] to-white/[.03] p-6 ring-1 ring-white/10">
           <div class="absolute -top-3 left-6 text-[11px] px-2 py-1 rounded bg-brand-red text-white font-extrabold tracking-wider">MAIS POPULAR</div>
           <div class="flex items-baseline justify-between">
@@ -236,15 +208,10 @@
           <ul class="mt-4 text-white/80 space-y-2">
             <li>◆ Inclui tudo do Pacote Sedução</li>
             <li>◆ 500+ edições raras (1975–2015)</li>
-            <li>◆ Bastidores nunca vistos das maiores musas do Brasil</li>
-            <li>◆ Acesso imediato após pagamento</li>
-            <li>◆ Qualidade máxima, imagens raras e digitalizadas</li>
+            <li>◆ Bastidores nunca vistos</li>
             <li>◆ Acesso vitalício + bônus secretos</li>
-            <li>◆ 7 dias de garantia total</li>
           </ul>
-          <button
-            onclick="window.location.href='https://pay.cakto.com.br/c2a2g68_607613';"
-            class="mt-6 inline-flex w-full items-center justify-center rounded-md bg-brand-red hover:bg-brand-redDark px-6 py-3 font-bold uppercase tracking-wide shadow-glow transition btn-pulse">
+          <button onclick="window.location.href='https://pay.cakto.com.br/c2a2g68_607613';" class="mt-6 inline-flex w-full items-center justify-center rounded-md bg-brand-red hover:bg-brand-redDark px-6 py-3 font-bold uppercase tracking-wide shadow-glow transition btn-pulse">
             🔥 Quero o Pacote Premium
           </button>
         </div>
@@ -252,8 +219,8 @@
     </div>
   </section>
 
-  <!-- Contador -->
   <script>
+    // Timer
     let tempoTopo = 5 * 60;
     const tempoRestante = document.getElementById("tempo-restante");
     setInterval(() => {
@@ -263,10 +230,8 @@
       tempoTopo--;
       if (tempoTopo <= 0) tempoTopo = 5 * 60;
     }, 1000);
-  </script>
 
-  <!-- Reveal -->
-  <script>
+    // Reveal
     const io = new IntersectionObserver((entries)=>{
       entries.forEach(e=>{
         if(e.isIntersecting){
@@ -276,22 +241,17 @@
       });
     },{threshold:0.15});
     document.querySelectorAll('.reveal, #pacotes').forEach(el=>io.observe(el));
-  </script>
 
-  <!-- Pessoas visualizando -->
-  <script>
-    const elVisualizando = document.getElementById('visualizando');
-    function atualizarVisualizacao() {
-      const pessoas = Math.floor(Math.random() * 40) + 30;
-      elVisualizando.textContent = `👀 ${pessoas} pessoas estão visualizando agora`;
+    // Visualização
+    const elVisualizando=document.getElementById('visualizando');
+    function atualizarVisualizacao(){
+      const pessoas=Math.floor(Math.random()*40)+30;
+      elVisualizando.textContent=`👀 ${pessoas} pessoas estão visualizando agora`;
     }
-    atualizarVisualizacao();
-    setInterval(atualizarVisualizacao, 15000);
-  </script>
+    atualizarVisualizacao(); setInterval(atualizarVisualizacao,15000);
 
-  <!-- Notificações -->
-  <script>
-    const nomes=['João','Carlos','Pedro','Rafael','Lucas','Diego','Gabriel','Thiago','André','Felipe','Bruno','Rodrigo','Marcos','Alexandre','Vinícius','Eduardo','Fernando','Ricardo','Paulo','Antônio','José','Roberto','Daniel','Miguel','Henrique','Leonardo','Gustavo','Fábio','Sérgio','Márcio','César','Vitor'];
+    // Notificações
+    const nomes=['João','Carlos','Pedro','Rafael','Lucas','Diego','Gabriel','Thiago','André','Felipe','Bruno','Rodrigo'];
     const pacotes=[{name:'Pacote Sedução',price:'R$10,00'},{name:'Pacote Premium',price:'R$19,90'}];
     function mostrarNotificacao(){
       const existente=document.querySelector('.purchase-notification');
@@ -300,38 +260,26 @@
       const pacote=pacotes[Math.floor(Math.random()*pacotes.length)];
       const n=document.createElement('div');
       n.className='purchase-notification';
-      n.innerHTML=`<div class="name">${nome}</div><div class="package">acabou de comprar o ${pacote.name}</div><div class="time">há poucos segundos</div>`;
+      n.innerHTML=`<div>${nome}</div><div>acabou de comprar o ${pacote.name}</div>`;
       document.body.appendChild(n);
       setTimeout(()=>n.classList.add('show'),100);
       setTimeout(()=>{n.classList.remove('show'); setTimeout(()=>n.remove(),500);},4000);
     }
     document.addEventListener('DOMContentLoaded',()=>{
-      mostrarNotificacao();
-      setInterval(mostrarNotificacao,20000);
+      mostrarNotificacao(); setInterval(mostrarNotificacao,20000);
     });
-  </script>
 
-  <!-- Back redirect -->
-  <script>
-    const backRedirectURL = "https://playboyoficial.onrender.com/desconto";
-    (function() {
-      let hasRedirected = false;
-      const redirectUser = () => { if (!hasRedirected) { hasRedirected = true; window.location.href = backRedirectURL; } };
-
-      history.pushState(null, null, location.href);
-      window.onpopstate = function() { history.pushState(null, null, location.href); redirectUser(); };
-      window.addEventListener("beforeunload", function() { if (!hasRedirected) redirectUser(); });
-      document.addEventListener("visibilitychange", function() { if (document.hidden && !hasRedirected) redirectUser(); });
-      document.addEventListener("touchstart", function(e){ if(e.touches.length>1) return; this._touchStartX=e.touches[0].clientX; });
-      document.addEventListener("touchend", function(e){
-        if(typeof this._touchStartX==="undefined") return;
-        const x=e.changedTouches[0].clientX;
-        if(this._touchStartX - x > 120 || x - this._touchStartX > 120) redirectUser();
-        this._touchStartX = undefined;
-      });
-      window.addEventListener("pagehide", function(){ redirectUser(); });
+    // Back redirect
+    const backRedirectURL="https://playboyoficial.onrender.com/desconto";
+    (function(){
+      let hasRedirected=false;
+      const redirectUser=()=>{if(!hasRedirected){hasRedirected=true;window.location.href=backRedirectURL;}};
+      history.pushState(null,null,location.href);
+      window.onpopstate=function(){history.pushState(null,null,location.href);redirectUser();};
+      window.addEventListener("beforeunload",()=>{if(!hasRedirected)redirectUser();});
+      document.addEventListener("visibilitychange",()=>{if(document.hidden&&!hasRedirected)redirectUser();});
+      window.addEventListener("pagehide",()=>redirectUser());
     })();
   </script>
-
 </body>
 </html>
