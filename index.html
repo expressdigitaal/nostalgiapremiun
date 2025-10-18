@@ -15,6 +15,30 @@
   async
   defer
 ></script>
+
+  <script>
+  // Aguarda o pixel carregar e dispara o evento ViewContent
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof utmify === "function") {
+      utmify("event", "ViewContent", {
+        page: document.title,
+        url: window.location.href
+      });
+    } else {
+      // Caso o script ainda não tenha carregado, tenta novamente após 1s
+      const check = setInterval(() => {
+        if (typeof utmify === "function") {
+          utmify("event", "ViewContent", {
+            page: document.title,
+            url: window.location.href
+          });
+          clearInterval(check);
+        }
+      }, 1000);
+    }
+  });
+</script>
+
   
 <head>
   <meta charset="utf-8" />
