@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-  <script>
+<script>
   window.pixelId = "68f3cc9baa170b5b8b8ffc77";
+
   var a = document.createElement("script");
   a.setAttribute("async", "");
   a.setAttribute("defer", "");
   a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  a.onload = function() {
+    // 🔥 Dispara automaticamente ao entrar no site
+    if (typeof utmify !== "undefined" && utmify.track) {
+      utmify.track("PageView");      // visita na página
+      utmify.track("ViewContent");   // conteúdo visualizado
+      console.log("✅ Pixel UTMify disparado: PageView + ViewContent");
+    }
+  };
   document.head.appendChild(a);
 </script>
-  
-  <script
+
+<script
   src="https://cdn.utmify.com.br/scripts/utms/latest.js"
   data-utmify-prevent-xcod-sck
   data-utmify-prevent-subids
